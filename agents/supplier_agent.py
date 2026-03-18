@@ -6,4 +6,4 @@ class SupplierAgent:
         self.supply_levels = [30, 50, 70]
 
     def act(self):
-        return random.choice(self.supply_levels)
+        return random.choice(self.supply_levels) 

@@ -16,4 +16,4 @@ class DemandModel:
         preds = self.predict(X_test)
         mae = mean_absolute_error(y_test, preds)
         print(f"Model MAE: {mae:.2f}")
-        return preds
+        return preds 

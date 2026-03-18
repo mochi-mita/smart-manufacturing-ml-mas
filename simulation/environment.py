@@ -17,11 +17,11 @@ class SupplyChainEnvironment:
 
         # balanced cost
         cost = (
-            shipment * 1.5 +         # logistics
-            self.inventory * 0.2 +   # holding
-            delay * 8               # penalty
+            shipment * 1.0 +         # logistics
+            self.inventory * 0.1 +   # holding
+            delay * 10               # penalty
         )
 
         self.cost += cost
 
-        return satisfied, cost
+        return satisfied, cost 

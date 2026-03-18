@@ -39,4 +39,4 @@ class QLearningAgent:
 
         self.q_table[i][d][action] += self.alpha * (
             reward + self.gamma * best_next - self.q_table[i][d][action]
-        )
+        ) 

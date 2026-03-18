@@ -5,10 +5,7 @@ class FactoryAgent:
 
     def act(self, demand, inventory):
 
-        # produce based on demand gap
-        required = demand - inventory
+        safety_stock = 20
+        required = demand + safety_stock - inventory
 
-        if required <= 0:
-            return 10   # minimal production
-
-        return min(required, self.max_capacity)
+        return max(10, min(required, self.max_capacity))  

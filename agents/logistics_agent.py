@@ -5,4 +5,4 @@ class LogisticsAgent:
 
     def act(self, shipment):
 
-        return min(shipment, self.capacity)
+        return min(shipment, self.capacity) 

@@ -17,4 +17,4 @@ def compute_metrics(costs, demands, satisfied):
         "Fill Rate": fill_rate,
         "Avg Delay": avg_delay,
         "Throughput": throughput
-    }
+    }   
