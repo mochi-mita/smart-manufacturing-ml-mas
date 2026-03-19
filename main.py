@@ -1,22 +1,21 @@
 from data_processing.preprocess_pipeline import DataPreprocessor
-from forecasting.train_model import DemandModel
-from simulation.simulation_runner import run_simulation
+from forecasting.demand_forecasting import DemandForecaster
+from simulation.simulation_runner import train_rl_agent
 
 def main():
 
-    print("Step 1: Preprocessing Data")
+    print("Preprocessing...")
     pipeline = DataPreprocessor("data/raw/demand.csv")
     X_train, X_test, y_train, y_test = pipeline.run()
 
-    print("Step 2: Training Model")
-    model = DemandModel()
+    print("Training ML model...")
+    model = DemandForecaster()
     model.train(X_train, y_train)
 
-    print("Step 3: Evaluating Model")
-    predictions = model.evaluate(X_test, y_test)
+    predictions = model.predict(X_test)
 
-    print("Step 4: Running Simulation")
-    run_simulation(predictions)
+    print("Training RL agent...")
+    train_rl_agent(predictions, episodes=100)
 
 if __name__ == "__main__":
-    main()  
+    main()

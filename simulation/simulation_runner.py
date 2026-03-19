@@ -3,57 +3,71 @@ from agents.warehouse_agent import WarehouseAgent
 from agents.logistics_agent import LogisticsAgent
 from evaluation.metrics import compute_metrics
 from rl.q_learning import QLearningAgent
+from rl.reward_functions import compute_reward
+from visualization.plots import plot_learning_curve, plot_demand_vs_supply
 
-def run_simulation(predictions):
-
-    env = SupplyChainEnvironment()
-
-    warehouse = WarehouseAgent()
-    logistics = LogisticsAgent()
+def train_rl_agent(predictions, episodes=100):
 
     rl_agent = QLearningAgent()
 
-    costs = []
-    demands = []
-    satisfied_list = []
+    episode_rewards = []
 
-    for day in range(len(predictions)-1):
+    for ep in range(episodes):
 
-        demand = predictions[day]
-        next_demand = predictions[day+1]
+        env = SupplyChainEnvironment()
+        warehouse = WarehouseAgent()
+        logistics = LogisticsAgent()
 
-        # RL decides production
-        action_idx = rl_agent.choose_action(env.inventory, demand)
-        production = rl_agent.actions[action_idx]
+        total_reward = 0
 
-        env.inventory += production
+        costs = []
+        demands = []
+        satisfied_list = []
 
-        shipment = warehouse.act(env.inventory, demand)
-        transport = logistics.act(shipment)
+        for day in range(len(predictions)-1):
 
-        satisfied, cost = env.step(0, transport, demand)
-        
-        # Ensure satisfied is per-day, not cumulative
-        satisfied = min(satisfied, demand)  # Can't satisfy more than demand
+            demand = predictions[day]
+            next_demand = predictions[day+1]
 
-        reward = satisfied - cost
+            action_idx = rl_agent.choose_action(env.inventory, demand)
+            production = rl_agent.actions[action_idx]
 
-        rl_agent.update(
-            env.inventory, demand,
-            action_idx, reward,
-            env.inventory, next_demand
-        )
+            env.inventory += production
 
-        rl_agent.epsilon = max(0.05, rl_agent.epsilon * 0.995)
+            shipment = warehouse.act(env.inventory, demand)
+            transport = logistics.act(shipment)
 
-        costs.append(cost)
-        demands.append(demand)
-        satisfied_list.append(satisfied)
+            satisfied, cost, delay = env.step(0, transport, demand)
 
-        print(f"Day {day} | Demand:{demand:.2f} | Inv:{env.inventory} | Satisfied:{satisfied:.2f} | Cost:{cost:.2f}")
+            reward = compute_reward(satisfied, demand, cost)
 
+            total_reward += reward
+
+            rl_agent.update(
+                env.inventory, demand,
+                action_idx, reward,
+                env.inventory, next_demand
+            )
+
+            rl_agent.epsilon = max(0.01, rl_agent.epsilon * 0.995)
+
+            costs.append(cost)
+            demands.append(demand)
+            satisfied_list.append(satisfied)
+
+        episode_rewards.append(total_reward)
+
+        print(f"Episode {ep+1} | Reward: {total_reward:.2f}")
+
+    # final metrics
     metrics = compute_metrics(costs, demands, satisfied_list)
 
     print("\nFinal Metrics:")
     for k, v in metrics.items():
-        print(f"{k}: {round(v, 2)}") 
+        print(k, ":", round(v, 2))
+
+    # plots
+    plot_learning_curve(episode_rewards)
+    plot_demand_vs_supply(demands, satisfied_list)
+
+    return rl_agent

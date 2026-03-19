@@ -7,14 +7,13 @@ class QLearningAgent:
 
         self.actions = [10, 30, 50, 80]
 
-        # state space: inventory (0–9), demand (0–9)
         self.q_table = np.zeros((10, 10, len(self.actions)))
 
         self.alpha = 0.1
         self.gamma = 0.9
-        self.epsilon = 0.2
+        self.epsilon = 0.3
 
-    def discretize(self, value, max_value=500):
+    def discretize(self, value, max_value=300):
         return min(int(value / (max_value / 10)), 9)
 
     def choose_action(self, inventory, demand):
@@ -39,4 +38,4 @@ class QLearningAgent:
 
         self.q_table[i][d][action] += self.alpha * (
             reward + self.gamma * best_next - self.q_table[i][d][action]
-        ) 
+        )

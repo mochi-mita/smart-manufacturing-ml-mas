@@ -7,7 +7,9 @@ class SupplyChainEnvironment:
 
     def step(self, production, shipment, demand):
 
-        # shipment already handled
+        self.inventory += production
+        self.inventory = min(self.inventory, self.max_inventory)
+
         shipment = min(shipment, self.inventory)
         self.inventory -= shipment
 
@@ -15,13 +17,12 @@ class SupplyChainEnvironment:
 
         delay = max(0, demand - satisfied)
 
-        # balanced cost
         cost = (
-            shipment * 1.0 +         # logistics
-            self.inventory * 0.1 +   # holding
-            delay * 10               # penalty
+            production * 1.0 +
+            self.inventory * 0.1 +
+            delay * 5
         )
 
         self.cost += cost
 
-        return satisfied, cost 
+        return satisfied, cost, delay
