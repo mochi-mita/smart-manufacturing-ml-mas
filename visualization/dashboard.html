@@ -158,6 +158,12 @@ body.dark .sev-m{background:#3d2e0a;color:#f0c060}
   <div class="card"><div class="ctitle">Resilience radar — normal vs disrupted</div><canvas id="c-radar" height="230"></canvas></div>
 </div>
 
+<div class="sec">🧠 Agent activity</div>
+<div class="card">
+  <div class="ctitle">Agent Activity Feed</div>
+  <div id="agent-feed" style="font-size:12px;max-height:220px;overflow:auto;line-height:1.4"></div>
+</div>
+
 <div class="sec">Disruption event log</div>
 <div class="card"><div class="tbl-wrap">
   <table><thead><tr><th>Step</th><th>Type</th><th>Description</th><th>Duration</th><th>Severity</th></tr></thead>
@@ -492,6 +498,15 @@ function exportCSV(){
   const a=Object.assign(document.createElement("a"),{href:URL.createObjectURL(new Blob([csv],{type:"text/csv"})),download:`ml-mas-report-${new Date().toISOString().slice(0,10)}.csv`});
   a.click();URL.revokeObjectURL(a.href);
 }
+function renderAgentFeed(){
+  const feed = document.getElementById("agent-feed");
+  if(!feed) return;
+
+  const logs = window.DASHBOARD_DATA.agent_logs || [];
+  feed.innerHTML = logs.map(l => "• " + l).join("<br>");
+}
+
+renderAgentFeed();
 </script>
 </body>
 </html>  
