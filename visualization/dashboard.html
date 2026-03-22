@@ -18,7 +18,7 @@ header p{font-size:11px;opacity:.6;margin-top:1px}
 .status-bar{background:#1e1c30;color:#b8b4d8;font-size:11px;padding:6px 24px;display:flex;gap:20px;flex-wrap:wrap}
 .sp{display:flex;align-items:center;gap:5px}
 .dot-s{width:6px;height:6px;border-radius:50%;flex-shrink:0}
-.main{max-width:1300px;margin:0 auto;padding:18px 18px 48px}
+.main{max-width:1300px;margin:0 auto;padding:18px 18px 60px}
 .sec{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:#888780;margin:22px 0 10px}
 .card{background:#fff;border:.5px solid rgba(0,0,0,.09);border-radius:12px;padding:15px 17px}
 body.dark .card{background:#1e1e1c;border-color:rgba(255,255,255,.07)}
@@ -27,83 +27,118 @@ body.dark .card{background:#1e1e1c;border-color:rgba(255,255,255,.07)}
 .g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
 .ctitle{font-size:11px;font-weight:600;color:#5c5b57;margin-bottom:11px}
 body.dark .ctitle{color:#a0a09a}
-
-/* KPI */
 .kpi{background:#f7f5f0;border-radius:10px;padding:13px 15px;text-align:center}
 body.dark .kpi{background:#252523}
 .kpi-lbl{font-size:10px;color:#888780;margin-bottom:3px;text-transform:uppercase;letter-spacing:.05em}
 .kpi-val{font-size:26px;font-weight:600}
 .kpi-sub{font-size:10px;color:#888780;margin-top:2px}
 .kpi-pass{color:#0a6e48}.kpi-fail{color:#a02020}
-body.dark .kpi-pass{color:#3bcfa0}
-body.dark .kpi-fail{color:#f09090}
-.c-teal{color:#0a6e48}.c-blue{color:#1458a0}.c-amber{color:#9a5c0a}.c-purple{color:#4338a0}
-body.dark .c-teal{color:#3bcfa0}
-body.dark .c-blue{color:#60a8e8}
-body.dark .c-amber{color:#f5b840}
-body.dark .c-purple{color:#a09af5}
-
-/* Scenario cards */
+body.dark .kpi-pass{color:#3bcfa0} body.dark .kpi-fail{color:#f09090}
+.c-teal{color:#0a6e48} .c-blue{color:#1458a0} .c-amber{color:#9a5c0a} .c-purple{color:#4338a0}
+body.dark .c-teal{color:#3bcfa0} body.dark .c-blue{color:#60a8e8}
+body.dark .c-amber{color:#f5b840} body.dark .c-purple{color:#a09af5}
 .sc-card{border-radius:12px;padding:16px 17px;border-width:1.5px;border-style:solid}
-.sc-gray {background:#f7f5f0;border-color:#b4b2a9}
-.sc-teal {background:#ecfaf4;border-color:#1D9E75}
-.sc-amber{background:#fef7ec;border-color:#EF9F27}
-body.dark .sc-gray {background:#252523;border-color:#5c5b57}
-body.dark .sc-teal {background:#0d2a1e;border-color:#1D9E75}
-body.dark .sc-amber{background:#2a1e08;border-color:#EF9F27}
+.sc-gray{background:#f7f5f0;border-color:#b4b2a9} .sc-teal{background:#ecfaf4;border-color:#1D9E75} .sc-amber{background:#fef7ec;border-color:#EF9F27}
+body.dark .sc-gray{background:#252523;border-color:#5c5b57} body.dark .sc-teal{background:#0d2a1e;border-color:#1D9E75} body.dark .sc-amber{background:#2a1e08;border-color:#EF9F27}
 .sc-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;display:inline-block;margin-bottom:7px}
-.sc-bdg-gray {background:#e0ded8;color:#5c5b57}
-.sc-bdg-teal {background:#c0f0da;color:#085041}
-.sc-bdg-amber{background:#fde8b0;color:#633806}
-body.dark .sc-bdg-gray {background:#3a3a38;color:#b4b2a9}
-body.dark .sc-bdg-teal {background:#0d4030;color:#5dcaa5}
-body.dark .sc-bdg-amber{background:#3d2a06;color:#f5b840}
-.sc-name{font-size:13px;font-weight:600;color:#1a1a18;margin-bottom:1px}
-body.dark .sc-name{color:#d4d2c8}
+.sc-bdg-gray{background:#e0ded8;color:#5c5b57} .sc-bdg-teal{background:#c0f0da;color:#085041} .sc-bdg-amber{background:#fde8b0;color:#633806}
+body.dark .sc-bdg-gray{background:#3a3a38;color:#b4b2a9} body.dark .sc-bdg-teal{background:#0d4030;color:#5dcaa5} body.dark .sc-bdg-amber{background:#3d2a06;color:#f5b840}
+.sc-name{font-size:13px;font-weight:600;color:#1a1a18;margin-bottom:1px} body.dark .sc-name{color:#d4d2c8}
 .sc-desc{font-size:11px;color:#888780;margin-bottom:11px}
-
-/* Headline metric block inside scenario card */
 .sc-metric-row{display:flex;align-items:flex-end;gap:14px;margin-bottom:10px;flex-wrap:wrap}
-.sc-metric{flex:1;min-width:80px}
-.sc-metric-lbl{font-size:10px;color:#888780;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px}
-.sc-metric-val{font-size:22px;font-weight:700;line-height:1}
-.sc-metric-sub{font-size:10px;color:#888780;margin-top:2px}
-
-/* Improvement badges */
+.sc-metric{flex:1;min-width:80px} .sc-metric-lbl{font-size:10px;color:#888780;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px}
+.sc-metric-val{font-size:22px;font-weight:700;line-height:1} .sc-metric-sub{font-size:10px;color:#888780;margin-top:2px}
 .imp-badge{font-size:11px;font-weight:600;padding:3px 9px;border-radius:8px;display:inline-flex;align-items:center;gap:3px;margin-bottom:10px}
-.imp-cost-save{background:#dcf5ea;color:#085041}
-.imp-neutral  {background:#ebebeb;color:#5c5b57}
-.imp-cost-neg {background:#fde8e8;color:#9a2020}
-body.dark .imp-cost-save{background:#0d3020;color:#5dcaa5}
-body.dark .imp-neutral  {background:#2a2a28;color:#a0a09a}
-body.dark .imp-cost-neg {background:#3d1818;color:#f09090}
-
+.imp-save{background:#dcf5ea;color:#085041} .imp-neu{background:#ebebeb;color:#5c5b57}
+body.dark .imp-save{background:#0d3020;color:#5dcaa5} body.dark .imp-neu{background:#2a2a28;color:#a0a09a}
 .sc-row{display:flex;justify-content:space-between;font-size:12px;padding:4px 0;border-bottom:.5px solid rgba(0,0,0,.06)}
 body.dark .sc-row{border-color:rgba(255,255,255,.06)}
-.sc-row:last-of-type{border-bottom:none}
-.sc-row-lbl{color:#888780}
-.sc-row-val{font-weight:500}
+.sc-row:last-of-type{border-bottom:none} .sc-row-lbl{color:#888780} .sc-row-val{font-weight:500}
 .sla-pill{font-size:10px;font-weight:600;padding:2px 8px;border-radius:8px;margin-top:9px;display:inline-block}
-.sla-pass{background:#dcf5ea;color:#085041}
-.sla-fail{background:#fde8e8;color:#9a2020}
-body.dark .sla-pass{background:#0d3020;color:#5dcaa5}
-body.dark .sla-fail{background:#3d1818;color:#f09090}
-
-/* Chart legend note */
+.sla-pass{background:#dcf5ea;color:#085041} .sla-fail{background:#fde8e8;color:#9a2020}
+body.dark .sla-pass{background:#0d3020;color:#5dcaa5} body.dark .sla-fail{background:#3d1818;color:#f09090}
 .chart-note{font-size:10px;color:#888780;margin-top:6px}
-
-/* Disruption table */
 .tbl-wrap{overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:12px}
 th{text-align:left;padding:7px 10px;border-bottom:1px solid rgba(0,0,0,.08);font-weight:600;font-size:10px;color:#888780;text-transform:uppercase;letter-spacing:.05em}
 td{padding:6px 10px;border-bottom:.5px solid rgba(0,0,0,.05)}
-body.dark th{border-color:rgba(255,255,255,.07)}
-body.dark td{border-color:rgba(255,255,255,.05)}
+body.dark th{border-color:rgba(255,255,255,.07)} body.dark td{border-color:rgba(255,255,255,.05)}
 tr:last-child td{border-bottom:none}
 .sev-h{background:#fde8e8;color:#9a2020;padding:2px 7px;border-radius:8px;font-size:10px;font-weight:600}
 .sev-m{background:#fef3da;color:#8a5a00;padding:2px 7px;border-radius:8px;font-size:10px;font-weight:600}
-body.dark .sev-h{background:#3d1818;color:#f09090}
-body.dark .sev-m{background:#3d2e0a;color:#f0c060}
+body.dark .sev-h{background:#3d1818;color:#f09090} body.dark .sev-m{background:#3d2e0a;color:#f0c060}
+
+/* ── 3D Architecture Diagram ─────────────────────────────────────────────── */
+.arch-outer{overflow-x:auto;padding:4px 0 12px}
+.arch-stage{perspective:900px;perspective-origin:50% 30%}
+.arch-svg-wrap{transform:rotateX(10deg) scale(.97);transform-origin:50% 0;transition:transform .4s}
+.arch-svg-wrap:hover{transform:rotateX(4deg) scale(1)}
+.arch-node{cursor:pointer;transition:filter .2s}
+.arch-node:hover .arch-rect{filter:brightness(1.08)}
+.arch-node:hover .arch-shadow{opacity:.18}
+.arch-rect{rx:8}
+.arch-shadow{rx:10;filter:blur(3px);opacity:.1;transition:opacity .2s}
+.arch-pulse circle{animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.4;r:3}50%{opacity:1;r:5}}
+.flow-path{fill:none;stroke-width:2;stroke-linecap:round;opacity:.7}
+@keyframes dash{to{stroke-dashoffset:-24}}
+.flow-anim{stroke-dasharray:8 6;animation:dash 1.2s linear infinite}
+.particle{r:4;opacity:0}
+@keyframes move-p{0%{opacity:0}10%{opacity:.9}85%{opacity:.9}100%{opacity:0}}
+
+/* ── Agent Activity Log ──────────────────────────────────────────────────── */
+.log-toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+.log-filter-grp{display:flex;gap:4px;flex-wrap:wrap}
+.lf-btn{font-size:10px;font-weight:600;padding:4px 10px;border-radius:20px;border:1px solid transparent;cursor:pointer;transition:all .15s;background:#f1efe8;color:#5c5b57}
+body.dark .lf-btn{background:#2a2a28;color:#a0a09a}
+.lf-btn.active{border-color:currentColor}
+.lf-btn.sev-all.active{background:#e6f1fb;color:#185FA5;border-color:#185FA5}
+.lf-btn.sev-ALERT.active{background:#fde8e8;color:#a02020;border-color:#E24B4A}
+.lf-btn.sev-WARNING.active{background:#fef3da;color:#8a5a00;border-color:#EF9F27}
+.lf-btn.sev-ACTION.active{background:#e1f5ee;color:#085041;border-color:#1D9E75}
+.lf-btn.sev-INFO.active{background:#eeedfe;color:#4338a0;border-color:#7F77DD}
+.lf-btn.sev-RESOLVED.active{background:#eaf3de;color:#27500a;border-color:#639922}
+.log-search{flex:1;min-width:160px;padding:5px 10px;border:.5px solid rgba(0,0,0,.12);border-radius:8px;font-size:12px;background:transparent;color:inherit;outline:none}
+body.dark .log-search{border-color:rgba(255,255,255,.12)}
+.log-count{font-size:11px;color:#888780;white-space:nowrap}
+.log-list{max-height:480px;overflow-y:auto;display:flex;flex-direction:column;gap:8px}
+.log-entry{border-radius:8px;border:.5px solid transparent;overflow:hidden;transition:border-color .15s;min-height:56px}
+.log-entry.sev-ALERT  {border-color:#f7c1c1;background:#fff8f8}
+.log-entry.sev-WARNING{border-color:#fac775;background:#fffdf5}
+.log-entry.sev-ACTION {border-color:#9fe1cb;background:#f5fdf9}
+.log-entry.sev-INFO   {border-color:#cecbf6;background:#fafafe}
+.log-entry.sev-RESOLVED{border-color:#c0dd97;background:#f7fdf0}
+body.dark .log-entry.sev-ALERT  {border-color:#7a2020;background:#1e1212}
+body.dark .log-entry.sev-WARNING{border-color:#7a5000;background:#1e1800}
+body.dark .log-entry.sev-ACTION {border-color:#0d6040;background:#0a1e16}
+body.dark .log-entry.sev-INFO   {border-color:#3c3889;background:#10101e}
+body.dark .log-entry.sev-RESOLVED{border-color:#3a6010;background:#0e1a08}
+.log-head{display:flex;align-items:flex-start;gap:8px;padding:11px 14px;cursor:pointer}
+.log-step{font-size:10px;font-family:monospace;background:rgba(0,0,0,.06);padding:1px 6px;border-radius:4px;white-space:nowrap;flex-shrink:0;margin-top:1px}
+body.dark .log-step{background:rgba(255,255,255,.08)}
+.log-sev{font-size:9px;font-weight:700;padding:2px 7px;border-radius:10px;flex-shrink:0;white-space:nowrap;letter-spacing:.04em}
+.sev-ALERT .log-sev  {background:#fde8e8;color:#9a2020} .sev-WARNING .log-sev{background:#fef3da;color:#8a5a00}
+.sev-ACTION .log-sev {background:#dcf5ea;color:#085041} .sev-INFO .log-sev   {background:#eeedfe;color:#4338a0}
+.sev-RESOLVED .log-sev{background:#eaf3de;color:#27500a}
+body.dark .sev-ALERT .log-sev  {background:#3d1818;color:#f09090} body.dark .sev-WARNING .log-sev{background:#3d2e0a;color:#f0c060}
+body.dark .sev-ACTION .log-sev {background:#0d3020;color:#5dcaa5} body.dark .sev-INFO .log-sev   {background:#1e1c40;color:#a09af5}
+body.dark .sev-RESOLVED .log-sev{background:#1a2e08;color:#97c459}
+.log-agent-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;flex-shrink:0;white-space:nowrap}
+.agent-Supplier {background:#faeeda;color:#633806} .agent-Factory  {background:#e6f1fb;color:#0c447c}
+.agent-Warehouse{background:#e1f5ee;color:#085041} .agent-Logistics{background:#eeedfe;color:#3c3489}
+.agent-Disruption{background:#fde8e8;color:#9a2020} .agent-System   {background:#f1efe8;color:#5c5b57}
+body.dark .agent-Supplier {background:#3d2a06;color:#f5b840} body.dark .agent-Factory  {background:#0a2040;color:#60a8e8}
+body.dark .agent-Warehouse{background:#0d2a1e;color:#5dcaa5} body.dark .agent-Logistics{background:#1e1c40;color:#a09af5}
+body.dark .agent-Disruption{background:#3d1818;color:#f09090} body.dark .agent-System   {background:#252523;color:#a0a09a}
+.log-msg-col{flex:1;min-width:0}
+.log-msg{font-size:12px;font-family:monospace;color:#2c2c2a;line-height:1.4;word-break:break-word}
+body.dark .log-msg{color:#c0bebc}
+.log-human{font-size:12px;color:#5c5b57;line-height:1.5;margin-top:4px;font-style:italic;border-left:2px solid rgba(0,0,0,.08);padding-left:8px}
+body.dark .log-human{color:#a0a09a;border-color:rgba(255,255,255,.1)}
+.log-expand-btn{font-size:10px;color:#888780;cursor:pointer;margin-top:4px;display:inline-block}
+.log-details{display:none;padding:8px 12px 10px;border-top:.5px solid rgba(0,0,0,.07);background:rgba(0,0,0,.02);font-size:11px;font-family:monospace;color:#5c5b57}
+body.dark .log-details{border-color:rgba(255,255,255,.06);background:rgba(255,255,255,.02);color:#a0a09a}
+.log-entry.expanded .log-details{display:block}
 @media(max-width:680px){.g4,.g3{grid-template-columns:repeat(2,1fr)}.g2{grid-template-columns:1fr}}
 </style>
 </head>
@@ -128,13 +163,180 @@ body.dark .sev-m{background:#3d2e0a;color:#f0c060}
   <div class="kpi"><div class="kpi-lbl">Throughput</div><div class="kpi-val c-amber" id="k-tput">—</div><div class="kpi-sub">units satisfied</div></div>
 </div>
 
+<div class="sec">System architecture — live data flow</div>
+<div class="card" style="padding:12px 10px 8px">
+  <div class="arch-outer">
+    <div class="arch-stage">
+      <div class="arch-svg-wrap">
+        <svg id="arch-svg" width="100%" viewBox="0 0 880 380" style="display:block;min-width:600px">
+          <defs>
+            <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+              <path d="M2 1L8 5L2 9" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </marker>
+          </defs>
+
+          <!-- Row 1: Data pipeline -->
+          <!-- demand.csv -->
+          <g class="arch-node" onclick="archClick('csv')">
+            <rect class="arch-shadow" x="12" y="32" width="128" height="52" fill="#888780"/>
+            <rect class="arch-rect" id="n-csv" x="10" y="28" width="128" height="52" fill="#F1EFE8" stroke="#888780" stroke-width="1"/>
+            <text x="74" y="49" text-anchor="middle" font-size="11" font-weight="600" fill="#2c2c2a">demand.csv</text>
+            <text x="74" y="64" text-anchor="middle" font-size="10" fill="#888780">913K rows · 4 cols</text>
+            <text x="74" y="76" text-anchor="middle" font-size="9" fill="#b4b2a9">store · item · date · sales</text>
+          </g>
+          <!-- arrow -->
+          <line x1="138" y1="54" x2="168" y2="54" stroke="#888780" stroke-width="1.5" marker-end="url(#ah)" marker-mid="url(#ah)"/>
+          <circle class="arch-pulse" cx="153" cy="54" r="3" fill="#888780"/>
+          <!-- Preprocessor -->
+          <g class="arch-node" onclick="archClick('pre')">
+            <rect class="arch-shadow" x="172" y="32" width="128" height="52" fill="#185FA5"/>
+            <rect class="arch-rect" id="n-pre" x="170" y="28" width="128" height="52" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+            <text x="234" y="49" text-anchor="middle" font-size="11" font-weight="600" fill="#0c447c">DataPreprocessor</text>
+            <text x="234" y="64" text-anchor="middle" font-size="10" fill="#185FA5">lag_1 · lag_7 features</text>
+            <text x="234" y="76" text-anchor="middle" font-size="9" fill="#378ADD">80/20 temporal split</text>
+          </g>
+          <line x1="298" y1="54" x2="328" y2="54" stroke="#185FA5" stroke-width="1.5" marker-end="url(#ah)"/>
+          <circle cx="313" cy="54" r="3" fill="#185FA5" opacity=".6"/>
+          <!-- RandomForest -->
+          <g class="arch-node" onclick="archClick('rf')">
+            <rect class="arch-shadow" x="332" y="32" width="128" height="52" fill="#185FA5"/>
+            <rect class="arch-rect" id="n-rf" x="330" y="28" width="128" height="52" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+            <text x="394" y="49" text-anchor="middle" font-size="11" font-weight="600" fill="#0c447c">RandomForest</text>
+            <text x="394" y="64" text-anchor="middle" font-size="10" fill="#185FA5">50 trees · MAE scoring</text>
+            <text x="394" y="76" text-anchor="middle" font-size="9" fill="#378ADD" id="rf-stat">Forecasting demand…</text>
+          </g>
+          <line x1="458" y1="54" x2="488" y2="54" stroke="#185FA5" stroke-width="1.5" marker-end="url(#ah)"/>
+          <!-- Predictions -->
+          <g class="arch-node" onclick="archClick('pred')">
+            <rect class="arch-shadow" x="492" y="32" width="128" height="52" fill="#0F6E56"/>
+            <rect class="arch-rect" id="n-pred" x="490" y="28" width="128" height="52" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+            <text x="554" y="49" text-anchor="middle" font-size="11" font-weight="600" fill="#085041">Predictions array</text>
+            <text x="554" y="64" text-anchor="middle" font-size="10" fill="#0F6E56">~182K values</text>
+            <text x="554" y="76" text-anchor="middle" font-size="9" fill="#1D9E75">mean≈52 · max≈231</text>
+          </g>
+
+          <!-- Disruption Engine (left side, row 2) -->
+          <g class="arch-node" onclick="archClick('dis')">
+            <rect class="arch-shadow" x="12" y="162" width="128" height="52" fill="#A32D2D"/>
+            <rect class="arch-rect" id="n-dis" x="10" y="158" width="128" height="52" fill="#FCEBEB" stroke="#A32D2D" stroke-width="1"/>
+            <text x="74" y="179" text-anchor="middle" font-size="11" font-weight="600" fill="#791F1F">DisruptionEngine</text>
+            <text x="74" y="194" text-anchor="middle" font-size="10" fill="#A32D2D">4 disruption types</text>
+            <text x="74" y="206" text-anchor="middle" font-size="9" fill="#E24B4A" id="dis-stat">~15% disruption rate</text>
+          </g>
+
+          <!-- RL Q-Agent (centre, row 2) -->
+          <g class="arch-node" onclick="archClick('rl')">
+            <rect class="arch-shadow" x="332" y="162" width="148" height="64" fill="#534AB7"/>
+            <rect class="arch-rect" id="n-rl" x="330" y="158" width="148" height="64" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.5"/>
+            <text x="404" y="178" text-anchor="middle" font-size="12" font-weight="700" fill="#3C3489">RL Q-Agent</text>
+            <text x="404" y="193" text-anchor="middle" font-size="10" fill="#534AB7">Q-table: 20×20×7 states</text>
+            <text x="404" y="206" text-anchor="middle" font-size="10" fill="#534AB7" id="rl-eps">ε: learning…</text>
+            <text x="404" y="218" text-anchor="middle" font-size="9" fill="#7F77DD">α=0.20 · γ=0.95</text>
+          </g>
+
+          <!-- Q-Table box to the right -->
+          <g class="arch-node" onclick="archClick('qt')">
+            <rect class="arch-shadow" x="502" y="168" width="108" height="44" fill="#534AB7"/>
+            <rect class="arch-rect" id="n-qt" x="500" y="164" width="108" height="44" fill="#EEEDFE" stroke="#7F77DD" stroke-width="1" stroke-dasharray="4 3"/>
+            <text x="554" y="183" text-anchor="middle" font-size="10" font-weight="600" fill="#3C3489">Q-Table</text>
+            <text x="554" y="197" text-anchor="middle" font-size="9" fill="#534AB7">2,800 values</text>
+            <text x="554" y="209" text-anchor="middle" font-size="8" fill="#7F77DD">Bellman updates</text>
+          </g>
+          <!-- RL ↔ Q-Table -->
+          <line x1="478" y1="186" x2="498" y2="186" stroke="#7F77DD" stroke-width="1.5" marker-end="url(#ah)"/>
+          <line x1="498" y1="196" x2="478" y2="196" stroke="#7F77DD" stroke-width="1.5" marker-end="url(#ah)"/>
+
+          <!-- connections: Predictions → RL -->
+          <path class="flow-path flow-anim" d="M554 80 L554 140 L404 140 L404 158" stroke="#0F6E56" marker-end="url(#ah)"/>
+          <!-- Disruption → RL -->
+          <path class="flow-path flow-anim" d="M138 184 L330 184" stroke="#E24B4A" marker-end="url(#ah)" style="animation-delay:.4s"/>
+
+          <!-- Row 3: The 4 agents -->
+          <!-- Supplier -->
+          <g class="arch-node" onclick="archClick('sup')">
+            <rect class="arch-shadow" x="42" y="282" width="108" height="62" fill="#854F0B"/>
+            <rect class="arch-rect" id="n-sup" x="40" y="278" width="108" height="62" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+            <text x="94" y="298" text-anchor="middle" font-size="11" font-weight="600" fill="#633806">SupplierAgent</text>
+            <text x="94" y="313" text-anchor="middle" font-size="10" fill="#854F0B">Batches: 80·120·180</text>
+            <text x="94" y="328" text-anchor="middle" font-size="9" fill="#BA7517">Stochastic supply</text>
+          </g>
+          <!-- Factory -->
+          <g class="arch-node" onclick="archClick('fac')">
+            <rect class="arch-shadow" x="192" y="282" width="108" height="62" fill="#185FA5"/>
+            <rect class="arch-rect" id="n-fac" x="190" y="278" width="108" height="62" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+            <text x="244" y="298" text-anchor="middle" font-size="11" font-weight="600" fill="#0c447c">FactoryAgent</text>
+            <text x="244" y="313" text-anchor="middle" font-size="10" fill="#185FA5">Actions: 20–200 units</text>
+            <text x="244" y="328" text-anchor="middle" font-size="9" fill="#378ADD">RL Q-policy driven</text>
+          </g>
+          <!-- Warehouse -->
+          <g class="arch-node" onclick="archClick('wh')">
+            <rect class="arch-shadow" x="342" y="282" width="108" height="62" fill="#0F6E56"/>
+            <rect class="arch-rect" id="n-wh" x="340" y="278" width="108" height="62" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+            <text x="394" y="298" text-anchor="middle" font-size="11" font-weight="600" fill="#085041">WarehouseAgent</text>
+            <text x="394" y="313" text-anchor="middle" font-size="10" fill="#0F6E56">min(inventory, demand)</text>
+            <text x="394" y="328" text-anchor="middle" font-size="9" fill="#1D9E75" id="wh-stat">Inventory management</text>
+          </g>
+          <!-- Logistics -->
+          <g class="arch-node" onclick="archClick('log')">
+            <rect class="arch-shadow" x="492" y="282" width="108" height="62" fill="#534AB7"/>
+            <rect class="arch-rect" id="n-log" x="490" y="278" width="108" height="62" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+            <text x="544" y="298" text-anchor="middle" font-size="11" font-weight="600" fill="#3C3489">LogisticsAgent</text>
+            <text x="544" y="313" text-anchor="middle" font-size="10" fill="#534AB7">Cap: 300 units</text>
+            <text x="544" y="328" text-anchor="middle" font-size="9" fill="#7F77DD">Transport gateway</text>
+          </g>
+
+          <!-- RL → agents (fan out) -->
+          <path class="flow-path flow-anim" d="M370 222 L370 250 L94 250 L94 278" stroke="#534AB7" marker-end="url(#ah)" style="animation-delay:.0s"/>
+          <path class="flow-path flow-anim" d="M385 222 L385 250 L244 250 L244 278" stroke="#534AB7" marker-end="url(#ah)" style="animation-delay:.2s"/>
+          <path class="flow-path flow-anim" d="M400 222 L400 260 L394 260 L394 278" stroke="#534AB7" marker-end="url(#ah)" style="animation-delay:.4s"/>
+          <path class="flow-path flow-anim" d="M420 222 L420 250 L544 250 L544 278" stroke="#534AB7" marker-end="url(#ah)" style="animation-delay:.6s"/>
+
+          <!-- Agent sequential flow -->
+          <line x1="148" y1="309" x2="188" y2="309" stroke="#888780" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#ah)"/>
+          <line x1="298" y1="309" x2="338" y2="309" stroke="#888780" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#ah)"/>
+          <line x1="448" y1="309" x2="488" y2="309" stroke="#888780" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#ah)"/>
+
+          <!-- Reward feedback arrow (right side) -->
+          <path class="flow-path" d="M620 309 L660 309 L660 186 L480 186" stroke="#1D9E75" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#ah)" opacity=".5"/>
+          <text x="672" y="252" text-anchor="middle" font-size="9" fill="#1D9E75" transform="rotate(-90,672,252)">reward ↺ Q-update</text>
+
+          <!-- Legend -->
+          <rect x="700" y="28" width="168" height="130" rx="6" fill="rgba(0,0,0,.03)" stroke="rgba(0,0,0,.08)" stroke-width=".5"/>
+          <text x="716" y="48" font-size="9" font-weight="600" fill="#888780">LAYER LEGEND</text>
+          <rect x="716" y="58" width="10" height="10" rx="2" fill="#E6F1FB" stroke="#185FA5"/>
+          <text x="732" y="67" font-size="9" fill="#5c5b57">Data &amp; ML layer</text>
+          <rect x="716" y="76" width="10" height="10" rx="2" fill="#FCEBEB" stroke="#A32D2D"/>
+          <text x="732" y="85" font-size="9" fill="#5c5b57">Disruption engine</text>
+          <rect x="716" y="94" width="10" height="10" rx="2" fill="#EEEDFE" stroke="#534AB7"/>
+          <text x="732" y="103" font-size="9" fill="#5c5b57">RL agent &amp; Q-table</text>
+          <rect x="716" y="112" width="10" height="10" rx="2" fill="#FAEEDA" stroke="#854F0B"/>
+          <text x="732" y="121" font-size="9" fill="#5c5b57">Agent pipeline</text>
+          <line x1="716" y1="135" x2="726" y2="135" stroke="#1D9E75" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <text x="732" y="139" font-size="9" fill="#5c5b57">Reward feedback</text>
+          <line x1="716" y1="150" x2="726" y2="150" stroke="#534AB7" stroke-width="1.5"/>
+          <text x="732" y="154" font-size="9" fill="#5c5b57">Decision flow</text>
+
+          <!-- Tooltip overlay (hidden by default) -->
+          <g id="arch-tooltip" opacity="0" pointer-events="none">
+            <rect id="tt-bg" rx="8" fill="#1a1a2e" opacity=".95"/>
+            <text id="tt-title" font-size="12" font-weight="600" fill="#e8e6dc"/>
+            <text id="tt-line1" font-size="10" fill="#b8b4d8"/>
+            <text id="tt-line2" font-size="10" fill="#b8b4d8"/>
+            <text id="tt-line3" font-size="10" fill="#9fe1cb"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div style="font-size:10px;color:#888780;margin-top:4px;text-align:center">Hover to tilt · Click any node for details</div>
+</div>
+
 <div class="sec">Scenario comparison — RL cost efficiency vs baseline</div>
 <div class="g3" id="sc-cards"></div>
-
 <div class="card" style="margin-top:11px">
-  <div class="ctitle">Fill rate &amp; cost — scenario comparison (both axes matter)</div>
-  <canvas id="c-scenario" height="110"></canvas>
-  <div class="chart-note">SLA threshold shown on fill rate axis. RL system achieves comparable fill rate at substantially lower total cost — this is the measurable value of reinforcement learning.</div>
+  <div class="ctitle">Fill rate &amp; cost — scenario comparison with SLA threshold</div>
+  <canvas id="c-scenario" height="100"></canvas>
+  <div class="chart-note">SLA line on fill rate axis. RL system achieves comparable fill rate at substantially lower total cost — the measurable value of reinforcement learning.</div>
 </div>
 
 <div class="sec">Training progress</div>
@@ -158,6 +360,32 @@ body.dark .sev-m{background:#3d2e0a;color:#f0c060}
   <div class="card"><div class="ctitle">Resilience radar — normal vs disrupted</div><canvas id="c-radar" height="230"></canvas></div>
 </div>
 
+<div class="sec">Agent activity log — final episode</div>
+<div class="card">
+  <div class="log-toolbar">
+    <div class="log-filter-grp" id="sev-filters">
+      <button class="lf-btn sev-all active" onclick="setFilter('sev','ALL',this)">All</button>
+      <button class="lf-btn sev-ALERT"   onclick="setFilter('sev','ALERT',this)">Alert</button>
+      <button class="lf-btn sev-WARNING" onclick="setFilter('sev','WARNING',this)">Warning</button>
+      <button class="lf-btn sev-ACTION"  onclick="setFilter('sev','ACTION',this)">Action</button>
+      <button class="lf-btn sev-INFO"    onclick="setFilter('sev','INFO',this)">Info</button>
+      <button class="lf-btn sev-RESOLVED" onclick="setFilter('sev','RESOLVED',this)">Resolved</button>
+    </div>
+    <div class="log-filter-grp" id="agent-filters">
+      <button class="lf-btn sev-all active" onclick="setFilter('agent','ALL',this)">All agents</button>
+      <button class="lf-btn agent-Supplier"  onclick="setFilter('agent','SupplierAgent',this)">Supplier</button>
+      <button class="lf-btn agent-Factory"   onclick="setFilter('agent','FactoryAgent',this)">Factory</button>
+      <button class="lf-btn agent-Warehouse" onclick="setFilter('agent','WarehouseAgent',this)">Warehouse</button>
+      <button class="lf-btn agent-Logistics" onclick="setFilter('agent','LogisticsAgent',this)">Logistics</button>
+      <button class="lf-btn agent-Disruption" onclick="setFilter('agent','DisruptionEngine',this)">Disruption</button>
+      <button class="lf-btn agent-System"    onclick="setFilter('agent','System',this)">System</button>
+    </div>
+    <input class="log-search" id="log-search" placeholder="Search log…" oninput="renderLog()">
+    <span class="log-count" id="log-count"></span>
+  </div>
+  <div class="log-list" id="log-list"></div>
+</div>
+
 <div class="sec">Disruption event log</div>
 <div class="card"><div class="tbl-wrap">
   <table><thead><tr><th>Step</th><th>Type</th><th>Description</th><th>Duration</th><th>Severity</th></tr></thead>
@@ -177,9 +405,10 @@ if(typeof window.DASHBOARD_DATA==="undefined"){
   const sat=dem.map(d=>d*(.9+Math.random()*.1));
   const inv=Array.from({length:n},(_,i)=>80+Math.sin(i/40)*40+Math.random()*20);
   window.DASHBOARD_DATA={
-    meta:{trained_at:"sample data",episodes:100,model:"Q-Learning",dataset:"demand.csv",total_events:247},
+    meta:{trained_at:"sample data",episodes:100,model:"Q-Learning",dataset:"demand.csv",total_disruption_events:247,total_agent_events:312},
     sla:{fill_rate:.90,avg_delay:5.0},
     sla_compliance:{fill_rate:{value:.97,target:.90,pass:true},avg_delay:{value:.24,target:5.0,pass:true}},
+    rl_meta:{n_bins:20,actions:[20,40,60,80,120,160,200],alpha:.2,gamma:.95,final_epsilon:.048},
     final_metrics:{"Fill Rate":.97,"Avg Delay":.24,"Total Cost":23150000,"Throughput":10423000},
     resilience_metrics:{resilience_score:.89,avg_recovery_steps:4.2,disruption_rate:.18,fill_during_disruption:.87,fill_normal:.97},
     scenario_comparison:{
@@ -198,50 +427,53 @@ if(typeof window.DASHBOARD_DATA==="undefined"){
       {step:1100,type:"logistics_breakdown",duration:4,description:"Logistics breakdown",severity:"high"},
     ],
     disruption_type_counts:{supplier_failure:3,demand_surge:6,logistics_breakdown:2,factory_slowdown:4},
+    agent_events:[
+      {step:320,severity:"ALERT",agent:"DisruptionEngine",event:"disruption_start",message:"[Step 320] Supplier failure ACTIVATED — expected (3, 8) steps",human_readable:"Disruption detected: Supplier failure now active. All downstream agents operating under degraded conditions. Impact: supply_factor x0.1. Monitoring recovery.",details:{type:"supplier_failure",severity:"high"}},
+      {step:321,severity:"WARNING",agent:"SupplierAgent",event:"supply_critically_low",message:"[Step 321] Supply critically constrained: 12 units (disruption active)",human_readable:"Critical supply alert: Only 12 units available from supplier — operating at 10% of normal batch capacity. Factory production will be severely limited this cycle.",details:{available:12,normal_range:"80–180 units"}},
+      {step:321,severity:"WARNING",agent:"WarehouseAgent",event:"inventory_below_safety",message:"[Step 321] Inventory below safety stock: 14/20 units | Demand: 68",human_readable:"Inventory warning: Stock level (14 units) has dropped below the 20-unit safety threshold. Warehouse operating in risk zone. RL agent should increase production orders now.",details:{inventory:14,safety_stock:20,demand:68}},
+      {step:322,severity:"ACTION",agent:"FactoryAgent",event:"max_production",message:"[Step 322] RL agent: MAX production deployed — 200 units | Inv: 14 | Demand: 72",human_readable:"Production line at full capacity: 200 units scheduled. RL agent identified critical inventory pressure (stock at 14 units, demand 72) and escalated to maximum output to prevent stockout.",details:{production:200,inventory:14,demand:72,q_action:6}},
+      {step:328,severity:"RESOLVED",agent:"DisruptionEngine",event:"disruption_resolved",message:"[Step 328] Supplier failure RESOLVED — normal operations restored",human_readable:"Disruption cleared: Supplier failure no longer active. Agents resuming standard operating parameters. Expect inventory recovery within 3–8 steps.",details:{type:"supplier_failure"}},
+      {step:335,severity:"RESOLVED",agent:"WarehouseAgent",event:"inventory_restored",message:"[Step 335] Inventory restored to 48 units — safety threshold cleared",human_readable:"Warehouse recovery confirmed: Inventory back above 20-unit safety threshold at 48 units. Full demand coverage restored. RL agent successfully navigated low-stock period.",details:{inventory:48,safety_stock:20}},
+      {step:740,severity:"ALERT",agent:"DisruptionEngine",event:"disruption_start",message:"[Step 740] Demand surge ACTIVATED — expected (2, 5) steps",human_readable:"Disruption detected: Demand surge now active. All downstream agents operating under degraded conditions. Impact: demand_factor x2.0. Monitoring recovery.",details:{type:"demand_surge",severity:"medium"}},
+      {step:741,severity:"ALERT",agent:"System",event:"sla_breach",message:"[Step 741] SLA BREACH: fill rate 0.612 below target 0.9",human_readable:"Service Level Agreement breached: Per-step fill rate at 0.612, below the 0.9 SLA floor. Root cause: active disruption(s): demand_surge. System is working to recover.",details:{fill_rate:.612,sla:.90}},
+      {step:741,severity:"ACTION",agent:"FactoryAgent",event:"high_production",message:"[Step 741] RL agent increased production to 160 units | Demand signal: 142",human_readable:"Production scaled up: 160 units ordered. RL Q-agent responding to elevated demand forecast (142 units expected). Proactive inventory build to absorb surge.",details:{production:160,demand:142}},
+      {step:745,severity:"RESOLVED",agent:"System",event:"sla_restored",message:"[Step 745] SLA RESTORED: fill rate recovered to 0.913",human_readable:"Service Level Agreement restored: Fill rate back above 0.9 at 0.913. RL agent successfully recovered from demand surge. Supply chain stability re-established.",details:{fill_rate:.913}},
+    ],
   };
 }
 
 const D=window.DASHBOARD_DATA;
-const PAL={teal:"#1D9E75",blue:"#378ADD",amber:"#EF9F27",purple:"#7F77DD",red:"#E24B4A",gray:"#888780"};
+const PAL={teal:"#1D9E75",blue:"#378ADD",amber:"#EF9F27",purple:"#7F77DD",red:"#E24B4A",gray:"#888780",coral:"#D85A30"};
 const DCOLS={supplier_failure:PAL.red,demand_surge:PAL.amber,logistics_breakdown:PAL.blue,factory_slowdown:PAL.purple};
 const SLA=D.sla||{fill_rate:.90,avg_delay:5.0};
-
 const isDark=()=>document.body.classList.contains("dark");
 const gc=()=>isDark()?"rgba(255,255,255,.07)":"rgba(0,0,0,.07)";
 const tc=()=>isDark()?"#a0a09a":"#5c5b57";
 const fmtM=v=>v>=1e9?(v/1e9).toFixed(2)+"B":v>=1e6?(v/1e6).toFixed(2)+"M":v>=1e3?(v/1e3).toFixed(1)+"K":Math.round(v).toLocaleString();
 
 function slaLine(n,val,color,label,axis="y"){
-  return{label,data:Array(n).fill(val),borderColor:color,borderDash:[6,4],borderWidth:1.5,
-    pointRadius:0,fill:false,tension:0,type:"line",yAxisID:axis,order:0};
+  return{label,data:Array(n).fill(val),borderColor:color,borderDash:[6,4],borderWidth:1.5,pointRadius:0,fill:false,tension:0,type:"line",yAxisID:axis,order:0};
 }
 function baseOpts(){
-  return{responsive:true,maintainAspectRatio:true,
-    plugins:{legend:{display:false}},
-    scales:{
-      x:{ticks:{maxTicksLimit:8,color:tc(),font:{size:10}},grid:{color:gc()}},
-      y:{ticks:{maxTicksLimit:6,color:tc(),font:{size:10}},grid:{color:gc()}},
-    }};
+  return{responsive:true,maintainAspectRatio:true,plugins:{legend:{display:false}},
+    scales:{x:{ticks:{maxTicksLimit:8,color:tc(),font:{size:10}},grid:{color:gc()}},
+             y:{ticks:{maxTicksLimit:6,color:tc(),font:{size:10}},grid:{color:gc()}}}};
 }
 
-/* Meta */
-document.getElementById("meta-line").textContent=
-  `Trained: ${D.meta.trained_at} · ${D.meta.episodes} episodes · ${D.meta.dataset}`;
-
-/* Status bar */
+/* Meta & status bar */
+document.getElementById("meta-line").textContent=`Trained: ${D.meta.trained_at} · ${D.meta.episodes} episodes · ${D.meta.dataset} · ${D.meta.total_agent_events||0} agent events`;
 const sb=document.getElementById("status-bar");
 const slac=D.sla_compliance||{};
-[
-  ["Fill rate",(slac.fill_rate?.value??D.final_metrics["Fill Rate"]).toFixed(3),slac.fill_rate?.pass!==false?PAL.teal:PAL.red],
-  ["Resilience",D.resilience_metrics.resilience_score.toFixed(3),PAL.purple],
-  ["Disruptions",D.meta.total_events+" events",PAL.amber],
-  ["SLA fill",slac.fill_rate?.pass!==false?"PASS":"FAIL",slac.fill_rate?.pass!==false?PAL.teal:PAL.red],
-  ["SLA delay",slac.avg_delay?.pass!==false?"PASS":"FAIL",slac.avg_delay?.pass!==false?PAL.teal:PAL.red],
+[[`Fill rate`,(slac.fill_rate?.value??D.final_metrics["Fill Rate"]).toFixed(3),slac.fill_rate?.pass!==false?PAL.teal:PAL.red],
+ [`Resilience`,D.resilience_metrics.resilience_score.toFixed(3),PAL.purple],
+ [`Disruptions`,D.meta.total_disruption_events+" events",PAL.amber],
+ [`SLA fill`,slac.fill_rate?.pass!==false?"PASS":"FAIL",slac.fill_rate?.pass!==false?PAL.teal:PAL.red],
+ [`SLA delay`,slac.avg_delay?.pass!==false?"PASS":"FAIL",slac.avg_delay?.pass!==false?PAL.teal:PAL.red],
+ [`Agent log`,(D.agent_events||[]).length+" events",PAL.blue],
 ].forEach(([l,v,c])=>sb.innerHTML+=`<span class="sp"><span class="dot-s" style="background:${c}"></span><span style="opacity:.7">${l}:</span>&nbsp;<strong>${v}</strong></span>`);
 
-/* KPI */
-const fillVal=D.final_metrics["Fill Rate"];
-const delayVal=D.final_metrics["Avg Delay"];
+/* KPI cards */
+const fillVal=D.final_metrics["Fill Rate"],delayVal=D.final_metrics["Avg Delay"];
 document.getElementById("k-fill").textContent=fillVal.toFixed(3);
 document.getElementById("k-delay").textContent=delayVal.toFixed(2);
 document.getElementById("k-res").textContent=D.resilience_metrics.resilience_score.toFixed(3);
@@ -253,194 +485,201 @@ const kds=document.getElementById("k-delay-sla");
 kds.textContent=`SLA ≤${SLA.avg_delay} — `+(delayVal<=SLA.avg_delay?"PASS":"FAIL");
 kds.className="kpi-sub "+(delayVal<=SLA.avg_delay?"kpi-pass":"kpi-fail");
 
-/* Scenario cards */
-const accentCols={gray:PAL.gray,teal:PAL.teal,amber:PAL.amber};
-const badgeCls={gray:"sc-bdg-gray",teal:"sc-bdg-teal",amber:"sc-bdg-amber"};
+/* Architecture diagram live data */
+const rm=D.rl_meta||{};
+if(rm.final_epsilon!=null) document.getElementById("rl-eps").textContent=`ε: ${rm.final_epsilon} (final)`;
+if(D.meta.total_disruption_events) document.getElementById("dis-stat").textContent=`${D.meta.total_disruption_events} events logged`;
+const lastInv=D.inventory_sample&&D.inventory_sample.length?D.inventory_sample[D.inventory_sample.length-1]:null;
+if(lastInv!=null) document.getElementById("wh-stat").textContent=`Last inv: ${lastInv.toFixed(0)} units`;
+const ARCH_TIPS={
+  csv:["demand.csv","913K rows — 10 stores, 50 items","Daily sales 2013–2018","Min 0 · Max 231 · Mean 52"],
+  pre:["DataPreprocessor","8 engineered features","lag_1, lag_7 autoregressive","80/20 temporal split"],
+  rf: ["RandomForest Forecaster","50 decision trees","Input → 8 features → prediction","Evaluated on test MAE"],
+  pred:["Predictions Array","~182K values per episode","Feeds the entire RL training loop","Mean ≈52 · Max ≈231 units"],
+  dis: ["DisruptionEngine","4 disruption types","Supplier, demand, logistics, factory","~15% disruption rate target"],
+  rl:  ["RL Q-Learning Agent","Q-table: 20×20×7 = 2,800 values","ε-greedy, α=0.20, γ=0.95","Bellman update each step"],
+  qt:  ["Q-Table","2,800 (inv_bin, demand_bin, action)","Updated via Bellman equation","Stores expected cumulative reward"],
+  sup: ["SupplierAgent","Stochastic batch: 80/120/180 units","Under supplier_failure: × 0.10","No direct demand awareness"],
+  fac: ["FactoryAgent (RL)","Actions: [20,40,60,80,120,160,200]","Driven by Q-table policy","Constrained by supplier output"],
+  wh:  ["WarehouseAgent","Greedy: min(inventory, demand)","Triggers production signal","Safety stock: 20 units"],
+  log: ["LogisticsAgent","Capacity: 300 units/step","Under breakdown: × 0.20","min(shipment, capacity)"],
+};
+function archClick(id){
+  const tip=ARCH_TIPS[id]; if(!tip)return;
+  const g=document.getElementById("arch-tooltip");
+  const bg=document.getElementById("tt-bg");
+  const t=document.getElementById("tt-title"),l1=document.getElementById("tt-line1"),l2=document.getElementById("tt-line2"),l3=document.getElementById("tt-line3");
+  t.textContent=tip[0]; l1.textContent=tip[1]; l2.textContent=tip[2]; l3.textContent=tip[3]||"";
+  const W=200,H=72,px=440,py=150;
+  bg.setAttribute("x",px); bg.setAttribute("y",py); bg.setAttribute("width",W); bg.setAttribute("height",H);
+  t.setAttribute("x",px+10); t.setAttribute("y",py+18);
+  l1.setAttribute("x",px+10); l1.setAttribute("y",py+34);
+  l2.setAttribute("x",px+10); l2.setAttribute("y",py+48);
+  l3.setAttribute("x",px+10); l3.setAttribute("y",py+62);
+  g.setAttribute("opacity","1");
+  setTimeout(()=>g.setAttribute("opacity","0"),3500);
+}
+
+/* Scenario comparison cards */
+const accCols={gray:PAL.gray,teal:PAL.teal,amber:PAL.amber};
+const bdgCls={gray:"sc-bdg-gray",teal:"sc-bdg-teal",amber:"sc-bdg-amber"};
 const cardCls={gray:"sc-gray",teal:"sc-teal",amber:"sc-amber"};
 const sc_container=document.getElementById("sc-cards");
-
 ["baseline","rl_normal","rl_disrupted"].forEach(key=>{
   const s=D.scenario_comparison[key]; if(!s)return;
-  const col=accentCols[s.accent]||PAL.gray;
-
-  /* Cost saving badge */
-  let impHtml="";
-  if(s.cost_saving_pct>0){
-    impHtml=`<span class="imp-badge imp-cost-save">&#8595; ${s.cost_saving_pct.toFixed(1)}% lower cost vs baseline</span>`;
-  } else if(s.cost_saving_pct<0){
-    impHtml=`<span class="imp-badge imp-cost-neg">&#8593; ${Math.abs(s.cost_saving_pct).toFixed(1)}% higher cost</span>`;
-  } else {
-    impHtml=`<span class="imp-badge imp-neutral">baseline</span>`;
-  }
-
-  /* Fill rate delta note */
-  const frNote=s.fr_delta_pp===0
-    ? "same fill rate as baseline"
-    : s.fr_delta_pp>0
-      ? `+${s.fr_delta_pp.toFixed(2)}pp above baseline`
-      : `${s.fr_delta_pp.toFixed(2)}pp vs baseline`;
-
-  const slaEl=`<span class="sla-pill ${s.sla_pass?"sla-pass":"sla-fail"}">SLA: ${s.sla_pass?"PASS":"FAIL"}</span>`;
-
+  const col=accCols[s.accent]||PAL.gray;
+  const imp=s.cost_saving_pct>0?`<span class="imp-badge imp-save">&#8595; ${s.cost_saving_pct.toFixed(1)}% lower cost vs baseline</span>`:`<span class="imp-badge imp-neu">baseline</span>`;
+  const frNote=s.fr_delta_pp===0?"same fill rate as baseline":s.fr_delta_pp>0?`+${s.fr_delta_pp.toFixed(2)}pp above baseline`:`${s.fr_delta_pp.toFixed(2)}pp vs baseline`;
   sc_container.innerHTML+=`<div class="sc-card ${cardCls[s.accent]}">
-    <span class="sc-badge ${badgeCls[s.accent]}">${s.is_rl?"RL system":"No-RL"}</span>
-    <div class="sc-name">${s.label}</div>
-    <div class="sc-desc">${s.description}</div>
+    <span class="sc-badge ${bdgCls[s.accent]}">${s.is_rl?"RL system":"No-RL"}</span>
+    <div class="sc-name">${s.label}</div><div class="sc-desc">${s.description}</div>
     <div class="sc-metric-row">
-      <div class="sc-metric">
-        <div class="sc-metric-lbl">Total cost</div>
-        <div class="sc-metric-val" style="color:${col}">${fmtM(s.total_cost)}</div>
-        <div class="sc-metric-sub">operational cost</div>
-      </div>
-      <div class="sc-metric">
-        <div class="sc-metric-lbl">Fill rate</div>
-        <div class="sc-metric-val" style="font-size:18px;color:${col}">${s.fill_rate.toFixed(3)}</div>
-        <div class="sc-metric-sub">${frNote}</div>
-      </div>
+      <div class="sc-metric"><div class="sc-metric-lbl">Total cost</div><div class="sc-metric-val" style="color:${col}">${fmtM(s.total_cost)}</div><div class="sc-metric-sub">operational cost</div></div>
+      <div class="sc-metric"><div class="sc-metric-lbl">Fill rate</div><div class="sc-metric-val" style="font-size:18px;color:${col}">${s.fill_rate.toFixed(3)}</div><div class="sc-metric-sub">${frNote}</div></div>
     </div>
-    ${impHtml}
+    ${imp}
     <div class="sc-row"><span class="sc-row-lbl">Avg delay</span><span class="sc-row-val">${s.avg_delay.toFixed(2)}</span></div>
     <div class="sc-row"><span class="sc-row-lbl">Resilience</span><span class="sc-row-val">${s.resilience_score.toFixed(3)}</span></div>
-    <div class="sc-row"><span class="sc-row-lbl">Throughput</span><span class="sc-row-val">${fmtM(s.total_cost>0?s.throughput:0)}</span></div>
-    ${slaEl}
+    <div class="sc-row"><span class="sc-row-lbl">Throughput</span><span class="sc-row-val">${fmtM(s.throughput||0)}</span></div>
+    <span class="sla-pill ${s.sla_pass?"sla-pass":"sla-fail"}">SLA: ${s.sla_pass?"PASS":"FAIL"}</span>
   </div>`;
 });
 
-/* Scenario grouped bar chart — fill rate (left) + cost (right) */
+/* Scenario bar chart */
 {
   const sc=D.scenario_comparison;
   const lbls=["No-RL baseline","RL disrupted","RL normal"];
-  const frVals=[sc.baseline?.fill_rate||0,sc.rl_disrupted?.fill_rate||0,sc.rl_normal?.fill_rate||0];
-  const costVals=[sc.baseline?.total_cost||0,sc.rl_disrupted?.total_cost||0,sc.rl_normal?.total_cost||0];
-  const barCols=[PAL.gray,PAL.amber,PAL.teal];
-
+  const frV=[sc.baseline?.fill_rate||0,sc.rl_disrupted?.fill_rate||0,sc.rl_normal?.fill_rate||0];
+  const cV=[sc.baseline?.total_cost||0,sc.rl_disrupted?.total_cost||0,sc.rl_normal?.total_cost||0];
+  const bC=[PAL.gray,PAL.amber,PAL.teal];
   const o=baseOpts();
   o.plugins.legend={display:true,labels:{color:tc(),font:{size:10},boxWidth:18,padding:12}};
   o.scales.y={min:.5,max:1.02,ticks:{color:tc(),font:{size:10},callback:v=>v.toFixed(2)},grid:{color:gc()},title:{display:true,text:"Fill rate",color:tc(),font:{size:10}}};
-  o.scales.y1={type:"linear",position:"right",grid:{drawOnChartArea:false},
-    ticks:{color:PAL.amber,font:{size:10},callback:v=>fmtM(v)},
-    title:{display:true,text:"Total cost",color:PAL.amber,font:{size:10}}};
+  o.scales.y1={type:"linear",position:"right",grid:{drawOnChartArea:false},ticks:{color:PAL.amber,font:{size:10},callback:v=>fmtM(v)},title:{display:true,text:"Total cost",color:PAL.amber,font:{size:10}}};
   o.scales.x={ticks:{color:tc(),font:{size:12}},grid:{display:false}};
-
   new Chart(document.getElementById("c-scenario"),{
     data:{labels:lbls,datasets:[
-      {type:"bar",label:"Fill rate",data:frVals,backgroundColor:barCols.map(c=>c+"cc"),
-        borderRadius:5,borderSkipped:false,yAxisID:"y",order:2},
-      slaLine(3,SLA.fill_rate,"rgba(226,75,74,.85)",`SLA (${SLA.fill_rate})`,  "y"),
-      {type:"bar",label:"Total cost",data:costVals,
-        backgroundColor:barCols.map(c=>c+"44"),
-        borderColor:barCols.map(c=>c+"aa"),borderWidth:1.5,
-        borderRadius:5,borderSkipped:false,yAxisID:"y1",order:3},
-    ]},
-    options:o,
+      {type:"bar",label:"Fill rate",data:frV,backgroundColor:bC.map(c=>c+"cc"),borderRadius:5,borderSkipped:false,yAxisID:"y",order:2},
+      slaLine(3,SLA.fill_rate,"rgba(226,75,74,.85)",`SLA (${SLA.fill_rate})`,"y"),
+      {type:"bar",label:"Total cost",data:cV,backgroundColor:bC.map(c=>c+"44"),borderColor:bC.map(c=>c+"aa"),borderWidth:1.5,borderRadius:5,borderSkipped:false,yAxisID:"y1",order:3},
+    ]},options:o,
   });
 }
-
-/* Learning curve */
-new Chart(document.getElementById("c-learn"),{
-  type:"line",
-  data:{labels:D.episode_rewards.map((_,i)=>i+1),
-    datasets:[{data:D.episode_rewards,borderColor:PAL.blue,backgroundColor:"rgba(55,138,221,.08)",
-      fill:true,tension:.35,pointRadius:0,borderWidth:1.8}]},
-  options:baseOpts(),
-});
-
-/* Episode fill + delay dual axis */
+new Chart(document.getElementById("c-learn"),{type:"line",data:{labels:D.episode_rewards.map((_,i)=>i+1),datasets:[{data:D.episode_rewards,borderColor:PAL.blue,backgroundColor:"rgba(55,138,221,.08)",fill:true,tension:.35,pointRadius:0,borderWidth:1.8}]},options:baseOpts()});
 {
-  const o=baseOpts();
-  o.plugins.legend={display:true,labels:{color:tc(),font:{size:10},boxWidth:18}};
+  const o=baseOpts();o.plugins.legend={display:true,labels:{color:tc(),font:{size:10},boxWidth:18}};
   o.scales.y1={type:"linear",position:"right",ticks:{color:PAL.coral||"#D85A30",font:{size:10}},grid:{drawOnChartArea:false}};
   const n=D.episode_fill_rates.length;
-  new Chart(document.getElementById("c-epfill"),{
-    type:"line",
-    data:{labels:D.episode_fill_rates.map((_,i)=>i+1),datasets:[
-      {label:"Fill rate",data:D.episode_fill_rates,borderColor:PAL.teal,tension:.3,pointRadius:0,borderWidth:1.8,yAxisID:"y"},
-      slaLine(n,SLA.fill_rate,"rgba(226,75,74,.8)",`SLA ${SLA.fill_rate}`,"y"),
-      {label:"Avg delay",data:D.episode_avg_delays,borderColor:"#D85A30",tension:.3,pointRadius:0,borderWidth:1.8,borderDash:[4,3],yAxisID:"y1"},
-      {...slaLine(n,SLA.avg_delay,"rgba(186,117,23,.8)",`Delay SLA ${SLA.avg_delay}`,"y1"),borderDash:[4,3]},
-    ]},
-    options:o,
-  });
+  new Chart(document.getElementById("c-epfill"),{type:"line",data:{labels:D.episode_fill_rates.map((_,i)=>i+1),datasets:[
+    {label:"Fill rate",data:D.episode_fill_rates,borderColor:PAL.teal,tension:.3,pointRadius:0,borderWidth:1.8,yAxisID:"y"},
+    slaLine(n,SLA.fill_rate,"rgba(226,75,74,.8)",`SLA ${SLA.fill_rate}`,"y"),
+    {label:"Avg delay",data:D.episode_avg_delays,borderColor:"#D85A30",tension:.3,pointRadius:0,borderWidth:1.8,borderDash:[4,3],yAxisID:"y1"},
+    {...slaLine(n,SLA.avg_delay,"rgba(186,117,23,.8)",`Delay SLA ${SLA.avg_delay}`,"y1"),borderDash:[4,3]},
+  ]},options:o});
 }
-
-/* Demand vs supply */
-new Chart(document.getElementById("c-dsupply"),{
-  type:"line",
-  data:{labels:D.demand_sample.map((_,i)=>i),datasets:[
-    {label:"Demand",data:D.demand_sample,borderColor:PAL.blue,fill:false,tension:.2,pointRadius:0,borderWidth:1.2},
-    {label:"Satisfied",data:D.satisfied_sample,borderColor:PAL.teal,backgroundColor:"rgba(29,158,117,.12)",fill:true,tension:.2,pointRadius:0,borderWidth:1.2},
-  ]},
-  options:{...baseOpts(),plugins:{...baseOpts().plugins,legend:{display:true,labels:{color:tc(),font:{size:10}}}}},
-});
-
-/* Inventory + safety stock band */
+new Chart(document.getElementById("c-dsupply"),{type:"line",data:{labels:D.demand_sample.map((_,i)=>i),datasets:[
+  {label:"Demand",data:D.demand_sample,borderColor:PAL.blue,fill:false,tension:.2,pointRadius:0,borderWidth:1.2},
+  {label:"Satisfied",data:D.satisfied_sample,borderColor:PAL.teal,backgroundColor:"rgba(29,158,117,.12)",fill:true,tension:.2,pointRadius:0,borderWidth:1.2},
+]},options:{...baseOpts(),plugins:{...baseOpts().plugins,legend:{display:true,labels:{color:tc(),font:{size:10}}}}}});
 {
   const n=D.inventory_sample.length;
-  new Chart(document.getElementById("c-inv"),{
-    type:"line",
-    data:{labels:D.inventory_sample.map((_,i)=>i),datasets:[
-      {label:"Inventory",data:D.inventory_sample,borderColor:PAL.purple,backgroundColor:"rgba(127,119,221,.1)",fill:true,tension:.3,pointRadius:0,borderWidth:1.6},
-      {label:"Safety stock (20)",data:Array(n).fill(20),borderColor:"rgba(186,117,23,.7)",borderDash:[5,3],borderWidth:1.5,pointRadius:0,fill:{target:"origin",above:"rgba(186,117,23,.05)"},tension:0},
-    ]},
-    options:{...baseOpts(),plugins:{...baseOpts().plugins,legend:{display:true,labels:{color:tc(),font:{size:10}}}}},
-  });
+  new Chart(document.getElementById("c-inv"),{type:"line",data:{labels:D.inventory_sample.map((_,i)=>i),datasets:[
+    {label:"Inventory",data:D.inventory_sample,borderColor:PAL.purple,backgroundColor:"rgba(127,119,221,.1)",fill:true,tension:.3,pointRadius:0,borderWidth:1.6},
+    {label:"Safety stock (20)",data:Array(n).fill(20),borderColor:"rgba(186,117,23,.7)",borderDash:[5,3],borderWidth:1.5,pointRadius:0,fill:{target:"origin",above:"rgba(186,117,23,.05)"},tension:0},
+  ]},options:{...baseOpts(),plugins:{...baseOpts().plugins,legend:{display:true,labels:{color:tc(),font:{size:10}}}}}});
 }
-
-/* Cost breakdown */
-new Chart(document.getElementById("c-cost"),{
-  type:"line",
-  data:{labels:D.prod_cost_sample.map((_,i)=>i),datasets:[
-    {label:"Production",data:D.prod_cost_sample,borderColor:PAL.blue,backgroundColor:"rgba(55,138,221,.3)",fill:true,tension:.2,pointRadius:0,borderWidth:0},
-    {label:"Holding",data:D.hold_cost_sample,borderColor:PAL.teal,backgroundColor:"rgba(29,158,117,.3)",fill:true,tension:.2,pointRadius:0,borderWidth:0},
-    {label:"Delay",data:D.delay_cost_sample,borderColor:PAL.red,backgroundColor:"rgba(226,75,74,.3)",fill:true,tension:.2,pointRadius:0,borderWidth:0},
-  ]},
-  options:{...baseOpts(),plugins:{...baseOpts().plugins,legend:{display:true,labels:{color:tc(),font:{size:10}}}}},
-});
-
-/* Doughnut */
+new Chart(document.getElementById("c-cost"),{type:"line",data:{labels:D.prod_cost_sample.map((_,i)=>i),datasets:[
+  {label:"Production",data:D.prod_cost_sample,borderColor:PAL.blue,backgroundColor:"rgba(55,138,221,.3)",fill:true,tension:.2,pointRadius:0,borderWidth:0},
+  {label:"Holding",data:D.hold_cost_sample,borderColor:PAL.teal,backgroundColor:"rgba(29,158,117,.3)",fill:true,tension:.2,pointRadius:0,borderWidth:0},
+  {label:"Delay",data:D.delay_cost_sample,borderColor:PAL.red,backgroundColor:"rgba(226,75,74,.3)",fill:true,tension:.2,pointRadius:0,borderWidth:0},
+]},options:{...baseOpts(),plugins:{...baseOpts().plugins,legend:{display:true,labels:{color:tc(),font:{size:10}}}}}});
 {
   const tc2=D.disruption_type_counts;
-  new Chart(document.getElementById("c-dtype"),{
-    type:"doughnut",
-    data:{labels:Object.keys(tc2).map(k=>k.replace(/_/g," ")),
-      datasets:[{data:Object.values(tc2),backgroundColor:Object.keys(tc2).map(k=>DCOLS[k]||PAL.gray),borderColor:"transparent",hoverOffset:6}]},
-    options:{responsive:true,maintainAspectRatio:true,cutout:"60%",
-      plugins:{legend:{display:true,position:"bottom",labels:{color:tc(),font:{size:10},padding:10}}}},
+  new Chart(document.getElementById("c-dtype"),{type:"doughnut",data:{labels:Object.keys(tc2).map(k=>k.replace(/_/g," ")),datasets:[{data:Object.values(tc2),backgroundColor:Object.keys(tc2).map(k=>DCOLS[k]||PAL.gray),borderColor:"transparent",hoverOffset:6}]},options:{responsive:true,maintainAspectRatio:true,cutout:"60%",plugins:{legend:{display:true,position:"bottom",labels:{color:tc(),font:{size:10},padding:10}}}}});
+}
+{
+  const rm2=D.resilience_metrics,fm=D.final_metrics,mxD=20,mxC=5000;
+  const nv=[rm2.fill_normal,1-Math.min(fm["Avg Delay"]/mxD,1),1-Math.min((fm["Total Cost"]/Math.max(fm["Throughput"],1)*100)/mxC,1),1,Math.min(rm2.fill_normal,1)];
+  const dv=[rm2.fill_during_disruption,1-Math.min(fm["Avg Delay"]*1.5/mxD,1),1-Math.min((fm["Total Cost"]/Math.max(fm["Throughput"],1)*120)/mxC,1),rm2.resilience_score,Math.min(rm2.fill_during_disruption,1)];
+  new Chart(document.getElementById("c-radar"),{type:"radar",data:{labels:["Fill rate","Low delay","Cost eff.","Resilience","Throughput"],datasets:[
+    {label:"Normal",data:nv,borderColor:PAL.teal,backgroundColor:"rgba(29,158,117,.18)",pointRadius:3,borderWidth:2},
+    {label:"Disrupted",data:dv,borderColor:PAL.red,backgroundColor:"rgba(226,75,74,.12)",pointRadius:3,borderWidth:2},
+  ]},options:{responsive:true,maintainAspectRatio:true,scales:{r:{min:0,max:1,ticks:{stepSize:.25,color:tc(),font:{size:9}},grid:{color:gc()},pointLabels:{color:tc(),font:{size:10}}}},plugins:{legend:{display:true,labels:{color:tc(),font:{size:10}}}}}});
+}
+
+/* ── Agent Activity Log ──────────────────────────────────────────────────── */
+let logFilterSev="ALL", logFilterAgent="ALL";
+const AGENT_SHORT={SupplierAgent:"Supplier",FactoryAgent:"Factory",WarehouseAgent:"Warehouse",LogisticsAgent:"Logistics",DisruptionEngine:"Disruption",System:"System"};
+
+function agentBadgeCls(ag){
+  const m={SupplierAgent:"Supplier",FactoryAgent:"Factory",WarehouseAgent:"Warehouse",LogisticsAgent:"Logistics",DisruptionEngine:"Disruption",System:"System"};
+  return "log-agent-badge agent-"+(m[ag]||"System");
+}
+
+function setFilter(type, val, btn){
+  if(type==="sev"){
+    logFilterSev=val;
+    document.querySelectorAll("#sev-filters .lf-btn").forEach(b=>b.classList.remove("active"));
+  } else {
+    logFilterAgent=val;
+    document.querySelectorAll("#agent-filters .lf-btn").forEach(b=>b.classList.remove("active"));
+  }
+  btn.classList.add("active");
+  renderLog();
+}
+
+function renderLog(){
+  const events=D.agent_events||[];
+  const search=document.getElementById("log-search").value.toLowerCase();
+  const filtered=events.filter(e=>{
+    if(logFilterSev!=="ALL" && e.severity!==logFilterSev) return false;
+    if(logFilterAgent!=="ALL" && e.agent!==logFilterAgent) return false;
+    if(search && !e.message.toLowerCase().includes(search) && !e.human_readable.toLowerCase().includes(search) && !e.agent.toLowerCase().includes(search)) return false;
+    return true;
+  });
+  document.getElementById("log-count").textContent=`${filtered.length} / ${events.length} events`;
+  const list=document.getElementById("log-list");
+  list.innerHTML="";
+  if(!filtered.length){
+    list.innerHTML=`<div style="text-align:center;color:#888;padding:24px;font-size:12px">No events match the current filter</div>`;
+    return;
+  }
+  filtered.forEach((e,idx)=>{
+    const det=Object.entries(e.details||{}).map(([k,v])=>`  ${k}: ${JSON.stringify(v)}`).join("\n");
+    const hasDetails=det.trim().length>0;
+    const div=document.createElement("div");
+    div.className=`log-entry sev-${e.severity}`;
+    div.innerHTML=`
+      <div class="log-head" onclick="toggleEntry(this.parentElement)">
+        <span class="log-step">Step ${e.step}</span>
+        <span class="log-sev">${e.severity}</span>
+        <span class="${agentBadgeCls(e.agent)}">${AGENT_SHORT[e.agent]||e.agent}</span>
+        <div class="log-msg-col">
+          <div class="log-msg">${escHtml(e.message)}</div>
+          <div class="log-human">${escHtml(e.human_readable)}</div>
+          ${hasDetails?`<span class="log-expand-btn">▸ Show details</span>`:""}
+        </div>
+      </div>
+      ${hasDetails?`<div class="log-details"><pre style="margin:0;white-space:pre-wrap">${escHtml(det)}</pre></div>`:""}`;
+    list.appendChild(div);
   });
 }
 
-/* Radar */
-{
-  const rm=D.resilience_metrics,fm=D.final_metrics;
-  const mxD=20,mxC=5000;
-  const nv=[rm.fill_normal,1-Math.min(fm["Avg Delay"]/mxD,1),1-Math.min((fm["Total Cost"]/Math.max(fm["Throughput"],1)*100)/mxC,1),1,Math.min(rm.fill_normal,1)];
-  const dv=[rm.fill_during_disruption,1-Math.min(fm["Avg Delay"]*1.5/mxD,1),1-Math.min((fm["Total Cost"]/Math.max(fm["Throughput"],1)*120)/mxC,1),rm.resilience_score,Math.min(rm.fill_during_disruption,1)];
-  new Chart(document.getElementById("c-radar"),{
-    type:"radar",
-    data:{labels:["Fill rate","Low delay","Cost eff.","Resilience","Throughput"],datasets:[
-      {label:"Normal",data:nv,borderColor:PAL.teal,backgroundColor:"rgba(29,158,117,.18)",pointRadius:3,borderWidth:2},
-      {label:"Disrupted",data:dv,borderColor:PAL.red,backgroundColor:"rgba(226,75,74,.12)",pointRadius:3,borderWidth:2},
-    ]},
-    options:{responsive:true,maintainAspectRatio:true,
-      scales:{r:{min:0,max:1,ticks:{stepSize:.25,color:tc(),font:{size:9}},grid:{color:gc()},pointLabels:{color:tc(),font:{size:10}}}},
-      plugins:{legend:{display:true,labels:{color:tc(),font:{size:10}}}}},
-  });
+function toggleEntry(el){
+  el.classList.toggle("expanded");
+  const btn=el.querySelector(".log-expand-btn");
+  if(btn) btn.textContent=el.classList.contains("expanded")?"▾ Hide details":"▸ Show details";
 }
+function escHtml(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+
+renderLog();
 
 /* Disruption log table */
 const tb=document.getElementById("dtbody");
-if(!D.disruption_log.length){
-  tb.innerHTML=`<tr><td colspan="5" style="text-align:center;color:#888;padding:16px">No disruptions recorded</td></tr>`;
-}else{
-  D.disruption_log.forEach(ev=>{
-    tb.innerHTML+=`<tr>
-      <td>${ev.step}</td>
-      <td><span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${DCOLS[ev.type]||"#888"};margin-right:5px"></span>${ev.type.replace(/_/g," ")}</td>
-      <td>${ev.description}</td><td>${ev.duration} steps</td>
-      <td><span class="${ev.severity==="high"?"sev-h":"sev-m"}">${ev.severity}</span></td>
-    </tr>`;
-  });
-}
+if(!D.disruption_log.length){tb.innerHTML=`<tr><td colspan="5" style="text-align:center;color:#888;padding:16px">No disruptions recorded</td></tr>`;}
+else D.disruption_log.forEach(ev=>{
+  tb.innerHTML+=`<tr><td>${ev.step}</td><td><span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${DCOLS[ev.type]||"#888"};margin-right:5px"></span>${ev.type.replace(/_/g," ")}</td><td>${ev.description}</td><td>${ev.duration} steps</td><td><span class="${ev.severity==="high"?"sev-h":"sev-m"}">${ev.severity}</span></td></tr>`;
+});
 
 /* Theme */
 function toggleTheme(){
@@ -460,7 +699,7 @@ function toggleTheme(){
   });
 }
 
-/* Export CSV */
+/* Export CSV — includes agent event log */
 function exportCSV(){
   const fm=D.final_metrics,rm=D.resilience_metrics,sc=D.scenario_comparison;
   const rows=[
@@ -472,9 +711,14 @@ function exportCSV(){
     ["Fill Rate",fm["Fill Rate"].toFixed(4),SLA.fill_rate,fm["Fill Rate"]>=SLA.fill_rate?"PASS":"FAIL"],
     ["Avg Delay",fm["Avg Delay"].toFixed(4),SLA.avg_delay,fm["Avg Delay"]<=SLA.avg_delay?"PASS":"FAIL"],
     [],
-    ["FINAL METRICS (RL system)"],
+    ["FINAL METRICS"],
     ["Fill Rate",fm["Fill Rate"].toFixed(4)],["Avg Delay",fm["Avg Delay"].toFixed(4)],
     ["Total Cost",Math.round(fm["Total Cost"])],["Throughput",Math.round(fm["Throughput"])],
+    [],
+    ["RL AGENT CONFIGURATION"],
+    ["Q-table bins",D.rl_meta?.n_bins||"20"],["Actions",JSON.stringify(D.rl_meta?.actions||[])],
+    ["Learning rate (alpha)",D.rl_meta?.alpha||"0.20"],["Discount factor (gamma)",D.rl_meta?.gamma||"0.95"],
+    ["Final epsilon",D.rl_meta?.final_epsilon||"—"],
     [],
     ["RESILIENCE METRICS"],
     ["Resilience Score",rm.resilience_score],["Avg Recovery Steps",rm.avg_recovery_steps],
@@ -484,14 +728,23 @@ function exportCSV(){
     ["Scenario","Fill Rate","Avg Delay","Total Cost","Cost Saving vs Baseline","SLA"],
     ...Object.values(sc).map(s=>[s.label,s.fill_rate.toFixed(4),s.avg_delay.toFixed(2),Math.round(s.total_cost),s.cost_saving_pct>0?`${s.cost_saving_pct.toFixed(1)}%`:"baseline",s.sla_pass?"PASS":"FAIL"]),
     [],
+    ["AGENT ACTIVITY LOG",(D.agent_events||[]).length+" events from final episode"],
+    ["Step","Severity","Agent","Event","Message","Human Readable Description","Detail Keys"],
+    ...(D.agent_events||[]).map(e=>[
+      e.step, e.severity, e.agent, e.event,
+      e.message,
+      e.human_readable,
+      Object.keys(e.details||{}).join("; "),
+    ]),
+    [],
     ["DISRUPTION SUMMARY"],
-    ["Total Events",D.meta.total_events],
-    ...Object.entries(D.disruption_type_counts).map(([k,v])=>[k.replace(/_/g," "),v]),
+    ["Total Events",D.meta.total_disruption_events],
+    ...Object.entries(D.disruption_type_counts||{}).map(([k,v])=>[k.replace(/_/g," "),v]),
   ];
-  const csv=rows.map(r=>r.map(c=>{const s=String(c??'');return s.includes(",")||s.includes('"')?`"${s.replace(/"/g,'""')}"`:`${s}`}).join(",")).join("\r\n");
+  const csv=rows.map(r=>r.map(c=>{const s=String(c??'');return s.includes(",")||s.includes('"')?`"${s.replace(/"/g,'""')}"`:s}).join(",")).join("\r\n");
   const a=Object.assign(document.createElement("a"),{href:URL.createObjectURL(new Blob([csv],{type:"text/csv"})),download:`ml-mas-report-${new Date().toISOString().slice(0,10)}.csv`});
   a.click();URL.revokeObjectURL(a.href);
 }
 </script>
 </body>
-</html>  
+</html> 
